@@ -16,7 +16,7 @@
 			{{- range .Data.Pages -}}
 			{{- if (in (.Site.Params.excludedTypes | default (slice "page")) .Type) -}}
 			{{- else -}}
-			<li class="post">
+			<li class="post post-summary">
 				<a href="{{ .RelPermalink }}">{{.Title}}</a> <span class="meta">{{ dateFormat "Jan 2, 2006" .Date }}{{ if .Draft }} <span class="draft-label">DRAFT</span> {{ end }}</span>
 			</li>
 			{{- end -}}
