@@ -43,6 +43,8 @@
 		{{- if eq ($.Scratch.Get "isDisqus") true -}}
 		{{- partial "disqus.html" . -}}
 		{{- end -}}
+        
+        {{ partial "single-extra.html" . }}
 	</div>
 	{{ partial "footer.html" . }}
 </body>
