@@ -463,6 +463,7 @@ ul {
 .project iframe {
     border-style: none;
     border-width: 0;
+    width: 100%;
 }
 
 .project-instructions {
